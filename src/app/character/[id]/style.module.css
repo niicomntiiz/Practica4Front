@@ -1,0 +1,27 @@
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  border: 5px solid grey;
+  border-radius: 12px;
+  background-color: #F7F7F7;
+  box-shadow: 2px 2px 5px black;
+}
+
+.detailContainer h1 {
+  text-align: center;
+}
+
+.detailContainer img {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  box-shadow: 2px 2px 5px black;
+}
