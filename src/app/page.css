@@ -1,0 +1,112 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #C7D3EB;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.charactersContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.characterCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px;
+  border: 5px solid grey;
+  border-radius: 12px;
+  background-color: #F7F7F7;
+  box-shadow: 2px 2px 5px black;
+  min-height: 320px;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.characterCard:hover {
+  transform: translateY(-3px);
+}
+
+.characterImg {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  box-shadow: 2px 2px 5px black;
+}
+
+.characterData {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.characterData h2 {
+  font-size: 16px;
+}
+
+.characterData p {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.statusDot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.paginacionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.BotonPaginar {
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 12px;
+  border: none;
+  background-color: white;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.BotonPaginar:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.paginaInfo {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.errorText {
+  color: #c0392b;
+}

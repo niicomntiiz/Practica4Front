@@ -1,0 +1,77 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #C7D3EB;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.BotonVolver {
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 12px;
+  border: none;
+  background-color: white;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border: 5px solid grey;
+  border-radius: 12px;
+  background-color: #F7F7F7;
+  box-shadow: 2px 2px 5px black;
+}
+
+.detailImg {
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px black;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}
+
+.detailContainer h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.detailFields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.detailFields p {
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #ebebeb;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.errorText {
+  color: #c0392b;
+}
